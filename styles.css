@@ -568,59 +568,55 @@ footer {
 
 /* Music Button Controls */
 .music-btn {
-  position: fixed;
-  bottom: 20px;
-  right: 20px;
-  width: 60px;
-  height: 60px;
-  border-radius: 50%;
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  border: 2px solid rgba(255, 255, 255, 0.2);
-  color: white;
-  font-size: 24px;
-  cursor: pointer;
-  z-index: 2000;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 2000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .music-btn:hover {
-  transform: scale(1.1) rotate(10deg);
-  background: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
-  border-color: rgba(255, 105, 180, 0.5);
+    transform: scale(1.1) rotate(10deg);
+    background: rgba(255, 255, 255, 0.25);
+    box-shadow: 0 0 20px rgba(255, 105, 180, 0.5);
+    border-color: rgba(255, 105, 180, 0.5);
 }
 
 .music-btn.playing {
-  animation: pulse-music 2s infinite;
-  background: rgba(255, 105, 180, 0.2);
-  border-color: rgba(255, 105, 180, 0.6);
-  box-shadow: 0 0 15px rgba(255, 105, 180, 0.4);
+    animation: pulse-music 2s infinite;
+    background: rgba(255, 105, 180, 0.2);
+    border-color: rgba(255, 105, 180, 0.6);
+    box-shadow: 0 0 15px rgba(255, 105, 180, 0.4);
 }
 
 @keyframes pulse-music {
-  0% {
-    box-shadow: 0 0 0 0 rgba(255, 105, 180, 0.4);
-  }
-  70% {
-    box-shadow: 0 0 0 15px rgba(255, 105, 180, 0);
-  }
-  100% {
-    box-shadow: 0 0 0 0 rgba(255, 105, 180, 0);
-  }
+    0% { box-shadow: 0 0 0 0 rgba(255, 105, 180, 0.4); }
+    70% { box-shadow: 0 0 0 15px rgba(255, 105, 180, 0); }
+    100% { box-shadow: 0 0 0 0 rgba(255, 105, 180, 0); }
 }
 
 /* Mobile adjustments */
 @media (max-width: 768px) {
-  .music-btn {
-    width: 50px;
-    height: 50px;
-    font-size: 20px;
-    bottom: 15px;
-    right: 15px;
-  }
+    .music-btn {
+        width: 50px;
+        height: 50px;
+        font-size: 20px;
+        bottom: 15px;
+        right: 15px;
+    }
 }
+
+
